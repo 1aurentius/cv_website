@@ -1,0 +1,124 @@
+#work {
+    /* left: 0;
+    right: 0; */
+    width: 100%;
+    /* margin-top: 80px; */
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
+    z-index: -2;
+}
+
+#timeline-hero {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    padding-top: 200px;
+    text-align: center;
+}
+
+#timeline-header {
+    font-size: 60px;
+}
+
+.timeline-container {
+    display: flex;
+    height: auto;
+    /* max-width: device-width; */
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+.company-logos {
+    position: sticky;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 60px;
+    padding: 20px;
+    margin-right: 20px;
+    /* border-radius: 12px; */
+    /* justify-content: center; */  
+}
+
+.company-logo {
+    padding: 10px;
+    border-radius: 100px;
+    width:40px;
+    transition: 0.2s;
+
+}
+.company-logo:hover {
+    padding: 10px;
+    border-radius: 0;
+    cursor: pointer;
+    width: 80px;
+    border-radius: 100px;
+}
+
+/* .timeline-column-1 {
+    
+} */
+
+.timeline-column-2 {
+    /* background-color: #FBF1FF; */
+    /* border-radius: 20px; */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -250px;
+
+}
+
+/* .timeline-column-3 {
+    position: sticky;
+    top: 200px;
+    display: flex;
+} */
+
+@media (max-width: 900px) {
+    .timeline-container {
+        margin: 10px;
+        /* width: ; */
+        height: auto;
+    }
+    .timeline-column-2 {
+        padding:20px;
+    }
+
+    .company-logos {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .card-img {
+        border-radius: 0px 0px 20px 20px;
+        flex: 0;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .timeline-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .company-logos {
+        display: none;
+        flex-direction: row;
+        position: sticky;
+        top: 100px;
+    }
+    #company-logo {
+        width: 20px;
+    }
+
+    #timeline-header {
+        font-size: 40px;
+    }
+}
+
+/**/
